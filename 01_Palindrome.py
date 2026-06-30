@@ -9,3 +9,7 @@ if(s == s[::-1]):
   print("It is a palindrome")
 else:
   print("It is not a palindrome")
+
+
+# Time Complexity: O(n) (reversing the string takes linear time)
+ # Space Complexity: O(n) (a new reversed string is created)

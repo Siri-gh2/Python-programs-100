@@ -19,3 +19,30 @@ for ch in s:
 print(rev)
 
 # time complexity = o(n^2)
+
+# Reverse a string without using slicing
+
+s = input("Enter a string: ")
+
+rev = ""
+
+for i in range(len(s) - 1, -1, -1):
+    rev += s[i]
+
+print("Reversed string:", rev)
+
+#Time Complexity: O(n²) (because of repeated string concatenation)
+#Space Complexity: O(n)
+
+#most efficient implementation without slicing
+
+chars = []
+
+for i in range(len(s) - 1, -1, -1):
+    chars.append(s[i])
+
+print("".join(chars))
+
+#Time Complexity: O(n)
+#Space Complexity: O(n)
+
